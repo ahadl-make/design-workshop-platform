@@ -33,6 +33,16 @@ If your moment lives on a screen not listed here, **attach your own screenshot**
 
 ---
 
+## 2b. Sidebar flyout menus (e.g. Catalog)
+
+**Screenshot:** `./assets/Catalog_menu.png`
+
+**What it is:** Some sidebar items open a flyout on hover. Catalog lists entity kinds (Library, Service, Website, Other, Documentation, Infrastructure, Database) in a left column and an action (Create Component) in a right column; the current kind has a purple indicator.
+
+**When to use as a reference:** Only when your moment *is* navigation — finding the right template, kind, or tool. The starter's sidebar has no flyouts; ask the AI to rebuild just the menu you need, from your own screenshot if it isn't this one.
+
+---
+
 ## 3. Docs
 
 **Screenshot:** `./assets/Documentation.png`

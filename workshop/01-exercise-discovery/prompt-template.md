@@ -53,7 +53,7 @@ Do this **in the same message** as the prompt (or right before it).
 |------|------------|
 | **Cursor** | Open the repo in Cursor. Paste the prompt, then `@`-mention `workshop/_context/platform-context.md` (or drag the file into the chat). |
 | **Claude Code** | Run from the repo root and ask Claude to read `workshop/_context/platform-context.md`, then paste the prompt. |
-| **V0 / ChatGPT / other chat** | Open [`workshop/_context/platform-context.md`](../_context/platform-context.md), copy its full contents, and paste **above** the prompt. |
+| **Claude chat (claude.ai)** | Attach [`workshop/_context/platform-context.md`](../_context/platform-context.md) to the same message as the prompt. |
 
 ---
 

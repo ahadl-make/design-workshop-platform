@@ -6,7 +6,7 @@
 
 ## What You'll Do
 
-1. **Open your AI tool** (Cursor, Claude, ChatGPT, V0, etc.)
+1. **Open your AI tool** (Claude Code, Claude chat, or Cursor)
 
 2. **Copy the prompt** from `prompt-template.md`
 

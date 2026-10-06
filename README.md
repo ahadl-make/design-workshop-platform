@@ -30,7 +30,7 @@ No design background needed. Bring a laptop.
 ## Before the workshop
 
 1. **Clone or download this repo** — you'll need the files during the session
-2. **Have your AI tool ready** — Claude, Cursor, V0, or ChatGPT all work
+2. **Have your AI tool ready** — Claude Code, Claude chat, or Cursor
 3. **Bring an idea** — one sentence: the idea or request, and who you think it's for. If you don't have one, we have backup problems ready (real DX themes).
 
 ---

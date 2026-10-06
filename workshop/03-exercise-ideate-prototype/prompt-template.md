@@ -62,6 +62,8 @@ Write a short plan in plain words:
 
 **States to show:** [Only what we need to try the moment]
 
+**Screens I need from you:** If the moment involves navigation (sidebar, flyout menus, More, tabs) or a screen not covered in platform-surfaces.md, ask me for a screenshot of exactly that part *before* I approve the plan. Rebuild only that menu or screen — keep the rest of the starter shell as it is.
+
 **Leaving out:** [Anything real that won't be in this prototype]
 
 **Faked:** Everything behind the screen — hardcoded data, no real APIs, auth, or backend.
@@ -89,7 +91,7 @@ Ask me to approve. If I ask to simplify, cut until it fits ~30 minutes of build.
 |------|------------|
 | **Cursor** | `@`-mention `platform-context.md`, `ux-principles.md`, `platform-surfaces.md`, `bui.md`, and `bui-starter.html` in the same chat as the prompt. Attach the matching screenshot from `_context/assets/` (or your own). |
 | **Claude Code** | From repo root, ask Claude to read those five `_context/` files with the prompt, and the screenshot of your surface. |
-| **V0 / ChatGPT / other** | Paste the full contents of the five files in the same message as the prompt, and attach the screenshot. |
+| **Claude chat (claude.ai)** | Attach the five files and your screenshot to the same message as the prompt. Download the finished HTML file and open it in your browser. |
 
 **Open the prototype:** double-click the HTML file — it loads BUI from the internet, no install needed.
 

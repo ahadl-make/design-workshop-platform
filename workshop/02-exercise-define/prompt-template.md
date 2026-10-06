@@ -43,7 +43,7 @@ Be conversational and keep it short — we have about 15 minutes. Propose a firs
 |------|------------|
 | **Cursor** | `@`-mention `workshop/_context/platform-context.md` with the prompt. |
 | **Claude Code** | Ask Claude to read `workshop/_context/platform-context.md`, then paste the prompt. |
-| **V0 / ChatGPT / other** | Paste the full contents of [`platform-context.md`](../_context/platform-context.md) **above** the prompt. |
+| **Claude chat (claude.ai)** | Attach [`platform-context.md`](../_context/platform-context.md) to the same message as the prompt. |
 
 ---
 

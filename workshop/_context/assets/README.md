@@ -6,6 +6,7 @@ Real screenshots so AI prompts can match the surfaces participants own. Describe
 |---|---|
 | `Home.png` | Make Backstage home |
 | `More_menu.png` | Sidebar "More" menu |
+| `Catalog_menu.png` | Sidebar Catalog flyout (entity kinds + Create Component) |
 | `Documentation.png` | Docs (TechDocs listing) |
 | `Devboxes.png` | Devbox Manager |
 | `Deployments.png` | Deployments status matrix |
