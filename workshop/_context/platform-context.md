@@ -50,7 +50,7 @@ Name a real role and a concrete job: e.g. *"a designer trying to open a vibe-cod
 
 ## What makers are already saying (public Slack, Jul–Oct 2026)
 
-A quick scan of #ask-devprod, #ask-internal-vibe-coding-platform, #make-engineering-all, #ai-tooling-guild and similar channels. People anonymized to roles. Counts are threads seen in ~25 searches — a floor, not a census. **Use as evidence for your hypothesis; don't quote it as if it were research.**
+A quick scan of #ask-devprod, #ask-internal-vibe-coding-platform, #make-engineering-all, #ai-tooling-guild and similar channels. People anonymized to roles. Counts are threads seen in ~25 searches — a floor, not a census. **A starting point for discovery — go find the threads behind it. Don't quote it as if it were research.**
 
 | Surface                               | Signal                                                                                                                   | Who                                                           | What it sounds like                                                                                                                                                                              |
 | ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |

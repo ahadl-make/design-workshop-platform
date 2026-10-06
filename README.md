@@ -18,9 +18,9 @@ No design background needed. Bring a laptop.
 | Theory walk (FigJam) | 15 min | What design is, the car, double diamond |
 | **Two Briefs** | 20 min | Feel why a problem brief beats a solution brief |
 | Break | 10 min | |
-| **1. Discovery** | 15 min | Use AI to turn your idea into a needs hypothesis |
-| Checkpoint | 5 min | Paste the hypothesis in Slack |
-| **2. Define** | 15 min | Goal, success sentence, moment to prototype — still no screens |
+| **1. Discovery** | 15 min | Use AI to dig through Slack, Confluence, Jira, GitHub, Backstage — what's already known about your idea |
+| Checkpoint | 5 min | Paste what stands out in Slack |
+| **2. Define** | 15 min | Ask why, write the needs hypothesis, then goal, success sentence, moment to prototype — still no screens |
 | **3. Ideate + Prototype** | 55 min | Explore directions — then build one rough moment |
 | **4. Pair Test + Improve** | 20 min | Test with a partner, change one thing |
 | Close | 12 min | Share + commitment |
@@ -30,7 +30,7 @@ No design background needed. Bring a laptop.
 ## Before the workshop
 
 1. **Clone or download this repo** — you'll need the files during the session
-2. **Have your AI tool ready** — Claude Code, Claude chat, or Cursor
+2. **Have your AI tool ready** — Claude Code, Claude chat, or Cursor. **Connect Slack and Atlassian (Confluence + Jira)** — and Backstage MCP if you have it — so the AI can search during Discovery (connectors in Claude chat, MCP servers in Claude Code or Cursor)
 3. **Bring an idea** — one sentence: the idea or request, and who you think it's for. If you don't have one, we have backup problems ready (real DX themes).
 
 ---
@@ -73,8 +73,8 @@ workshop/
 
 Three AI conversations, with walls between them, then a test:
 
-1. **Discovery** — one needs hypothesis: who struggles, with what, and why. No solutions.
-2. **Define** — three lines: goal, *"We'd know this worked if [a maker did this],"* and the moment to prototype. No layouts.
+1. **Discovery** — dig: what Slack, Confluence, Jira, GitHub and Backstage already say about your idea. Who hits it, when, how often, what they do today. No hypothesis, no solutions.
+2. **Define** — ask why until you reach the cause, write one needs hypothesis, then three lines: goal, *"We'd know this worked if [a maker did this],"* and the moment to prototype. No layouts.
 3. **Ideate + Prototype** — 2–3 different directions described as what the maker sees and does, pick one, approve a short plan, then a rough prototype built from Backstage UI (BUI) components, with everything faked behind the screen. No code until the plan is approved.
 4. **Test + Improve** — a partner plays the maker and tries your success sentence; you change the one thing they stumbled on.
 
@@ -86,6 +86,6 @@ Include [`workshop/_context/platform-context.md`](workshop/_context/platform-con
 
 ## After the workshop
 
-- Your needs hypothesis goes in the Slack thread at the checkpoint. Before you leave, add your success sentence and what you changed after testing
+- What stood out in discovery goes in the Slack thread at the checkpoint. Before you leave, add your needs hypothesis, success sentence and what you changed after testing
 - Show your moment to **one real maker of that role** this week
 - Reuse the prompts anytime you get a solution-shaped ping or a DX comment you want to turn into a brief

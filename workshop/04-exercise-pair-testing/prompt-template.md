@@ -25,7 +25,7 @@ Generate a quick usability test I can run with a partner in 4 minutes:
 I built a prototype (or have a design direction) and need to test it with a partner. Here's the context:
 
 **The problem I'm solving:**
-[FILL IN: Paste your needs hypothesis from Discovery]
+[FILL IN: Paste your needs hypothesis from Define]
 
 **Moment to prototype / success sentence:**
 [FILL IN: From Define]

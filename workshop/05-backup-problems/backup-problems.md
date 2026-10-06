@@ -118,6 +118,6 @@ Engineers and engineering managers are confused that one AI budget is shared acr
 ## How to use these
 
 1. Pick the one closest to something you've seen.
-2. Paste the **starter idea** into the discovery prompt. For 6–13, the matching row in `platform-context.md` is already there as evidence — the AI can draw on it.
+2. Paste the **starter idea** into the discovery prompt. For 6–13, the matching row in `platform-context.md` is where the digging starts — the AI should find the threads behind it, not just repeat the row.
    (Solution-shaped is fine — the prompt will push you back to the person and the job.)
 3. If you have a DX comment or a real story that matches, add it as evidence in the prompt.

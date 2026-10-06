@@ -21,8 +21,7 @@ One continuous conversation with an AI acting as your design buddy:
 
 ## Your Input
 
-- Your **needs hypothesis** from Exercise 1
-- Your **three define lines** from Exercise 2: goal, success, moment to prototype
+- Your **needs hypothesis** and **three define lines** from Exercise 2: goal, success, moment to prototype
 - The **tool or surface you own** (e.g. Backstage docs, Devboxes, a vibe-coded app) — attach the matching screenshot from `_context/assets/` or your own
 
 ---

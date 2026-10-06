@@ -1,12 +1,12 @@
 # Exercise 1: Discovery with AI
 **Time:** 15 minutes  
-**Goal:** Turn your idea or request into a needs hypothesis — who is blocked, at what moment, and why — before any solutions
+**Goal:** Dig up what's already known about your idea — real moments people got stuck, who, how often, what they do today — before deciding what the problem is
 
 ---
 
 ## What You'll Do
 
-1. **Open your AI tool** (Claude Code, Claude chat, or Cursor)
+1. **Open your AI tool** (Claude Code, Claude chat, or Cursor) — ideally with Slack and Atlassian connected
 
 2. **Copy the prompt** from `prompt-template.md`
 
@@ -15,7 +15,7 @@
    - Anything you already know (optional — a DX comment, a Slack ping, a number)
    - Include [`workshop/_context/platform-context.md`](../_context/platform-context.md) — see `prompt-template.md` for how
 
-4. **Have a short conversation.** The AI asks a few whys, helps you name who is affected, and writes the hypothesis with you.
+4. **Let the AI dig.** It searches Slack, Confluence, Jira, GitHub and Backstage, then summarises what it found. You read, question, and ask for links.
 
 ---
 
@@ -36,23 +36,38 @@
 
 **Don't have an idea?** Grab a backup from `05-backup-problems/`.
 
-**Feels too small?** Perfect. "Change the idle timeout" becomes "Who loses flow, at what moment, and why?" — that's the point.
+**Feels too small?** Perfect. Small ideas still leave a trail in Slack — go find it.
 
 ---
 
-**You have 15 minutes.** If the AI proposes a solution, stop it.
+## What "good" looks like
+
+| Good | Not yet |
+|---|---|
+| Real threads and tickets, with dates and links | "Users find it confusing" with no source |
+| Roles and moments ("a PM opening an app link from Slack") | Names, or "users" |
+| "Searched Jira, found nothing" | Silence about where it didn't look |
+| Something that surprised you | Only evidence that agrees with your idea |
+
+**You have 15 minutes.** No "why" questions, no hypothesis, no solutions yet — that's Define. If the AI proposes a fix, stop it: *"Stay in the evidence."*
+
+**AI can't search?** It gives you 3 searches to run yourself in Slack or Confluence. Run them, paste back what you find.
 
 ## Output
 
 ```
-We think [ROLE] struggles with [PROBLEM] because [ROOT CAUSE].
-They need [OUTCOME] without [CURRENT FRICTION].
+What stands out: …
+Who hits it, and when: …
+How often / how recent: …
+What people do today: …
+Already known or tried: …
+Surprises: …
+Gaps: …
+Sources: …
 ```
-
-Optional: *One thing I'd check after today: …*
 
 ---
 
 ## Next Step
 
-Paste the hypothesis in the Slack thread. Then move to **Exercise 2: Define**.
+Paste **What stands out** and **Who hits it** in the Slack thread. Then move to **Exercise 2: Define** with the full summary.
