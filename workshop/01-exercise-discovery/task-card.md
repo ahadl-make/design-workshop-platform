@@ -1,5 +1,5 @@
 # Exercise 1: Discovery with AI
-**Time:** 15 minutes  
+**Time:** 10 minutes  
 **Goal:** Dig up what's already known about your idea — real moments people got stuck, who, how often, what they do today — before deciding what the problem is
 
 ---
@@ -49,7 +49,7 @@
 | "Searched Jira, found nothing" | Silence about where it didn't look |
 | Something that surprised you | Only evidence that agrees with your idea |
 
-**You have 15 minutes.** No "why" questions, no hypothesis, no solutions yet — that's Define. If the AI proposes a fix, stop it: *"Stay in the evidence."*
+**You have 10 minutes.** Keep it to ~5 searches. No "why" questions, no hypothesis, no solutions yet — that's Define. If the AI proposes a fix, stop it: *"Stay in the evidence."*
 
 **AI can't search?** It gives you 3 searches to run yourself in Slack or Confluence. Run them, paste back what you find.
 
@@ -70,4 +70,4 @@ Sources: …
 
 ## Next Step
 
-Paste **What stands out** and **Who hits it** in the Slack thread. Then move to **Exercise 2: Define** with the full summary.
+Save the summary to `my-outputs/1-discovery.md`. Paste **What stands out** and **Who hits it** in the Slack thread. Then move to **Exercise 2: Define** with the full summary.

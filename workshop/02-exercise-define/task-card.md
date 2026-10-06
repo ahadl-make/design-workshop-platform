@@ -49,4 +49,4 @@ Keep these handy — you'll paste them into Exercise 3. Your **success sentence 
 
 ## Next Step
 
-Add your hypothesis to the Slack thread. Move to **Exercise 3: Ideate + Prototype**.
+Save the output to `my-outputs/2-define.md`. Add your hypothesis to the Slack thread. Move to **Exercise 3: Ideate + Prototype**.

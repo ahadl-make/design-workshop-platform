@@ -79,7 +79,7 @@ Ask me to approve. If I ask to simplify, cut until it fits ~30 minutes of build.
 3. **Use only BUI components documented in bui.md.** Don't invent components or props. Colours only via `--bui-*` tokens — no hard-coded colours, no Tailwind. If something isn't in BUI, tell me and use the simplest plain HTML.
 4. Match the layout of my surface's screenshot, rebuilt from BUI pieces (bui.md has recipes for existing pages). If platform-surfaces.md doesn't cover my tool, ask me for a screenshot before guessing.
 5. Rough and clear beats pretty: readable hierarchy, one obvious primary action, enough interactivity to try the moment. Follow ux-principles.md.
-6. Deliver one self-contained HTML file I can open in a browser.
+6. Deliver one self-contained HTML file I can open in a browser. If you can write files, save it as `my-outputs/prototype.html` — never edit `bui-starter.html` itself.
 7. Ask: "What would you like to change, test, or simplify?"
 ```
 
@@ -103,6 +103,7 @@ Ask me to approve. If I ask to simplify, cut until it fits ~30 minutes of build.
 2. Copy the prompt, paste them in, and name your tool.
 3. Include the five context files (and a screenshot if you can).
 4. Don't approve a vague direction or an oversized plan.
+5. Your prototype lives in `my-outputs/prototype.html` (Claude chat: save the HTML there yourself).
 
 ---
 

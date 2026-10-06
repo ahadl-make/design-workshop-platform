@@ -38,7 +38,7 @@ Help me dig. Stay in the evidence — no solutions, and no verdict on the root c
    - Backstage: does the doc or owner a maker would need exist, and is it findable?
    - Focus on the last ~6 months. If a search finds nothing, say so — nothing is a finding too.
 
-4. **Summarise in this format** (short — I have 15 minutes):
+4. **Summarise in this format** (short — I have 10 minutes, so keep it to about 5 searches):
    - **What stands out** — 2–3 bullets, your read, not a list of links
    - **Who hits it, and when** — roles (never names) and the moment it goes wrong
    - **How often / how recent** — counts with dates; say they're a floor, not a census
@@ -77,7 +77,7 @@ Do this **in the same message** as the prompt (or right before it).
 2. **Copy the prompt** (everything between the triple backticks).
 3. **Replace `[FILL IN …]`** with your idea. Add anything you already know.
 4. **Send it** and let it dig. Read the summary — push back if something sounds invented: *"Where did you find that? Link it."*
-5. **Stop** at about 15 minutes. Paste **What stands out** and **Who hits it** in the workshop Slack thread.
+5. **Stop** at about 10 minutes. Save the summary to `my-outputs/1-discovery.md`. Paste **What stands out** and **Who hits it** in the workshop Slack thread.
 
 **Don't have an idea?** Pick one from [`05-backup-problems/backup-problems.md`](../05-backup-problems/backup-problems.md).
 

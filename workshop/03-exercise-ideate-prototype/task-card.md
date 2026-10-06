@@ -80,4 +80,4 @@ Rough, clear, interactive enough to try the one moment. Leave ~5 min to make sur
 
 ## Next Step
 
-Move to **Exercise 4: Pair Testing + Improve**.
+Your prototype should be in `my-outputs/prototype.html`. Move to **Exercise 4: Pair Testing + Improve**.

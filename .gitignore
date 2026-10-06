@@ -45,3 +45,9 @@ storybook-mcp-setup.md
 PROJECT.md
 # Mug exercise — participants must not see both briefs before the reveal (DM the cards instead)
 workshop/00-exercise-two-briefs/
+# Full Slack research report — facilitator only
+workshop/platform-signals-full-report.md
+
+# Participants' own outputs — stay on their laptops
+my-outputs/*
+!my-outputs/README.md

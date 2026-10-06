@@ -18,7 +18,7 @@ No design background needed. Bring a laptop.
 | Theory walk (FigJam) | 15 min | What design is, the car, double diamond |
 | **Two Briefs** | 20 min | Feel why a problem brief beats a solution brief |
 | Break | 10 min | |
-| **1. Discovery** | 15 min | Use AI to dig through Slack, Confluence, Jira, GitHub, Backstage — what's already known about your idea |
+| **1. Discovery** | 10 min | Use AI to dig through Slack, Confluence, Jira, GitHub, Backstage — what's already known about your idea |
 | Checkpoint | 5 min | Paste what stands out in Slack |
 | **2. Define** | 15 min | Ask why, write the needs hypothesis, then goal, success sentence, moment to prototype — still no screens |
 | **3. Ideate + Prototype** | 55 min | Explore directions — then build one rough moment |
@@ -38,6 +38,8 @@ No design background needed. Bring a laptop.
 ## Folder structure
 
 ```
+my-outputs/                             ← Save everything you make today here (stays on your laptop)
+
 workshop/
 ├── _context/
 │   ├── platform-context.md             ← Makers, evidence, how to think
@@ -86,6 +88,7 @@ Include [`workshop/_context/platform-context.md`](workshop/_context/platform-con
 
 ## After the workshop
 
+- Everything you made is in `my-outputs/` — discovery, define, prototype, test notes
 - What stood out in discovery goes in the Slack thread at the checkpoint. Before you leave, add your needs hypothesis, success sentence and what you changed after testing
 - Show your moment to **one real maker of that role** this week
 - Reuse the prompts anytime you get a solution-shaped ping or a DX comment you want to turn into a brief

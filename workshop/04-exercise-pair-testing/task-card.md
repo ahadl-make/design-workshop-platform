@@ -62,7 +62,7 @@ Post in the Slack thread, one line each:
 - **Surprised me:** …
 - **I changed:** …
 
-Be ready to share it in the close.
+Save both lines (and anything else you noticed) to `my-outputs/4-test-notes.md`. Be ready to share it in the close.
 
 ---
 

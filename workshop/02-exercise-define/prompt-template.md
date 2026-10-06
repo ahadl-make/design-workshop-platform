@@ -65,7 +65,7 @@ Same chat as discovery is fine — then you don't need to re-paste the summary.
 1. Copy your starting idea and the evidence summary from Exercise 1.
 2. Copy the prompt and paste them in.
 3. Include `platform-context.md`.
-4. Answer the whys honestly. Confirm the hypothesis, then the three lines.
+4. Answer the whys honestly. Confirm the hypothesis, then the three lines. Save them to `my-outputs/2-define.md`.
 5. If the AI starts proposing screens or features — stop it: *"Stay in define. No solutions yet."*
 
 ---
