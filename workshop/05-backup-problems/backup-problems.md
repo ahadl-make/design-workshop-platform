@@ -1,11 +1,13 @@
 # Backup problems (anonymized)
 
-> Use if someone arrives without an idea. Names and teams stripped. Drawn from real DX survey themes (Sept 2026) plus one non-engineer case from the platform team's expanding audience.
+> Use if someone arrives without an idea. Names and teams stripped. 1–5 are drawn from real DX survey themes (Sept 2026); 6–13 from public Slack threads (Jul–Oct 2026) summarised in `_context/platform-context.md` → *What makers are already saying*.
 > **Do not** put the raw DX CSV in the participant pack.
 
 Pick one. Treat it as your starting idea — then run the discovery prompt on it.
 
 ---
+
+# From the DX survey
 
 ## 1. Docs are still tribal, even with Backstage
 
@@ -47,8 +49,75 @@ Designers (and other non-engineering makers) try to use vibe-coded apps / Backst
 
 ---
 
+# From Slack (Jul–Oct 2026)
+
+## 6. Nobody can find what vibe-coded apps exist
+
+PMs, designers, recruiting and marketing hear about an internal app and can't find it. The Vibe Coded Apps page is built for managing your own apps, not for discovering other people's — no way to see what exists or who owns it. Nearly every thread needed a platform engineer to answer by hand.
+
+**Starter idea:** "We should add search to the Vibe Coded Apps page."
+
+---
+
+## 7. Hosting a vibe-coded app is full of silent surprises
+
+Makers who host an app hit things nobody warned them about: imports take 12–40 minutes, environment variables get wiped with no alert, "Public" vs "no login" is confusing, and there are no honest usage numbers. Each surprise turns into a Slack thread a platform engineer answers by hand.
+
+**Starter idea:** "We should send an email when env vars change."
+
+---
+
+## 8. "Which template do I use for a new service?"
+
+Three people in two months asked this in Slack. The Blueprint README points at templates that don't exist, and some docs are published but not in the nav.
+
+**Starter idea:** "We should clean up the Blueprints list."
+
+---
+
+## 9. Signed in with the wrong account, Backstage looks half-empty
+
+Signing in with one of two accounts hides most of Backstage. New-to-repo engineers, designers and PMs conclude a page or guide doesn't exist — or that they lack access — and ask in Slack. One broken-guide thread ran to 35 replies.
+
+**Starter idea:** "We should remove the second sign-in option."
+
+---
+
+## 10. "Is Kargo broken, or is it me?"
+
+Backend engineers and service owners can't tell whether their release is stuck or still working: Kargo sits refreshing (one person kept hitting refresh), the same service shows up in both Kargo and Argo Workflows, and a project can be unexpectedly in Manual mode with an old version in prod. ~6 threads in Sep–Oct.
+
+**Starter idea:** "We should add a status page for Kargo."
+
+---
+
+## 11. Logged out every day, and nobody knows if it's just them
+
+Engineers and engineering managers using Backstage MCP get asked to re-authenticate daily. The thread collected six "+1"s — the strongest "me too" in the scan — and was still reproducing two weeks after a fix. Each person first assumes it's their own setup.
+
+**Starter idea:** "We should make the login session last longer."
+
+---
+
+## 12. #ask-devprod has become an approval queue
+
+Dozens of "please review my small PR" posts; the "no response for over an hour" bot fired in several threads. People don't know whose approval they actually need — and some PRs never needed DevProd at all.
+
+**Starter idea:** "We should add an SLA bot to #ask-devprod."
+
+---
+
+## 13. Nobody understands the shared AI budget
+
+Engineers and engineering managers are confused that one AI budget is shared across several tools, and some rows in AI spend reporting are empty. (The homepage AI spend widget itself is praised.)
+
+**Starter idea:** "We should add a per-tool breakdown to AI spend."
+
+---
+
 ## How to use these
 
 1. Pick the one closest to something you've seen.
-2. Paste the **starter idea** into the discovery prompt (solution-shaped is fine — the prompt will push you back to the person and the job).
+2. Paste the **starter idea** into the discovery prompt. For 6–13, the matching row in `platform-context.md` is already there as evidence — the AI can draw on it.
+   (Solution-shaped is fine — the prompt will push you back to the person and the job.)
 3. If you have a DX comment or a real story that matches, add it as evidence in the prompt.
