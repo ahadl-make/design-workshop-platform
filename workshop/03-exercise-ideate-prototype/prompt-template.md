@@ -1,7 +1,7 @@
 # Exercise 3: Ideation + Prototyping Prompt
 **Design buddy version — platform workshop**
 
-Copy the prompt below into your AI tool and paste your hypothesis and define lines. **Include** platform context, UX principles, and surfaces using [How to include context](#how-to-include-context).
+Copy the prompt below into your AI tool and paste your hypothesis and define lines. **Include** the five `_context/` files (platform context, UX principles, surfaces, `bui.md`, `bui-starter.html`) and your screenshot using [How to include context](#how-to-include-context).
 
 **No code until you've approved the plan.** If the AI jumps early, stop it.
 
@@ -101,7 +101,7 @@ Ask me to approve. If I ask to simplify, cut until it fits ~30 minutes of build.
 
 1. Copy your hypothesis and the three define lines.
 2. Copy the prompt, paste them in, and name your tool.
-3. Include the three context files (and a screenshot if you can).
+3. Include the five context files (and a screenshot if you can).
 4. Don't approve a vague direction or an oversized plan.
 
 ---

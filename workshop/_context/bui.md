@@ -87,7 +87,7 @@ Responsive props accept `value` or `{ initial: v, md: v2 }`. Space values are st
 - **List*** : **List** + **ListRow** (`description`, `icon`, `menuItems`, `customActions`) for simple link/item lists.
 
 ### Data display
-- **Table*** (high-level, recommended). Props: `columnConfig`, `data` (items need unique `id`), `pagination` (REQUIRED: `{ type: 'none' }` or `{ type: 'page', pageSize, hasNextPage, hasPreviousPage, onNextPage, onPreviousPage, totalCount, offset }`), `sort={{ descriptor, onSortChange }}`, `rowConfig={{ onClick(item), getHref(item) }}`, `selection={{ mode, selected, onSelectionChange }}`, `emptyState`, `loading`, `error`.
+- **Table*** (high-level, recommended). Props: `columnConfig`, `data` (items need unique `id`), `pagination` (REQUIRED: `{ type: 'none' }` or `{ type: 'page', pageSize, hasNextPage, hasPreviousPage, onNextPage, onPreviousPage, totalCount, offset }`; `pageSize` must be 5, 10, 20, 30, 40 or 50, otherwise it silently falls back to 5. For a short hardcoded list use `{ type: 'none' }`), `sort={{ descriptor, onSortChange }}`, `rowConfig={{ onClick(item), getHref(item) }}`, `selection={{ mode, selected, onSelectionChange }}`, `emptyState`, `loading`, `error`.
   Column: `{ id, label, cell: (row) => element, isRowHeader, isSortable, width, minWidth }`. `cell` MUST return `Cell`, `CellText` or `CellProfile`:
   `{ id: 'name', label: 'Name', isRowHeader: true, cell: (r) => html\`<${CellText} title=${r.name} description=${r.desc} href="#" />\` }`
   Custom content: `cell: (r) => html\`<${Cell}><${Text} color="success">${r.status}<//><//>\``. `CellText`: `title`, `description`, `color`(`primary|secondary`), `leadingIcon`, `href`. `CellProfile`: `name`, `src`, `description`, `href`.
