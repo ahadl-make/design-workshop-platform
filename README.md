@@ -43,6 +43,8 @@ workshop/
 │   ├── platform-context.md             ← Makers, evidence, how to think
 │   ├── ux-principles.md                ← Hierarchy, heuristics, prototype rules
 │   ├── platform-surfaces.md            ← Backstage surface anatomy
+│   ├── bui.md                          ← Backstage UI (BUI) — the design system you build with
+│   ├── bui-starter.html                ← Starting file for your prototype (BUI + Make purple)
 │   └── assets/                         ← Backstage screenshots
 │
 ├── 01-exercise-discovery/
@@ -73,12 +75,12 @@ Three AI conversations, with walls between them, then a test:
 
 1. **Discovery** — one needs hypothesis: who struggles, with what, and why. No solutions.
 2. **Define** — three lines: goal, *"We'd know this worked if [a maker did this],"* and the moment to prototype. No layouts.
-3. **Ideate + Prototype** — 2–3 different directions described as what the maker sees and does, pick one, approve a short plan, then rough HTML with everything faked behind the screen. No code until the plan is approved.
+3. **Ideate + Prototype** — 2–3 different directions described as what the maker sees and does, pick one, approve a short plan, then a rough prototype built from Backstage UI (BUI) components, with everything faked behind the screen. No code until the plan is approved.
 4. **Test + Improve** — a partner plays the maker and tries your success sentence; you change the one thing they stumbled on.
 
 If the AI jumps to building early, stop it: *"Go back. No code until I approve the plan."*
 
-Include [`workshop/_context/platform-context.md`](workshop/_context/platform-context.md) with Discovery and Define. For Ideate + Prototype, also include `ux-principles.md`, `platform-surfaces.md`, and the matching screenshot from `assets/`. See each `prompt-template.md` for Cursor / Claude Code / paste instructions.
+Include [`workshop/_context/platform-context.md`](workshop/_context/platform-context.md) with Discovery and Define. For Ideate + Prototype, also include `ux-principles.md`, `platform-surfaces.md`, `bui.md`, `bui-starter.html`, and the matching screenshot from `assets/`. See each `prompt-template.md` for Cursor / Claude Code / paste instructions.
 
 ---
 

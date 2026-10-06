@@ -13,6 +13,8 @@ One continuous conversation with an AI acting as your design buddy:
 
 **The thinking is the work.** Don't rush to the prototype. Rough HTML is success — Backstage visual fidelity is out of scope.
 
+**Use the design system.** You build with **Backstage UI (BUI)** — real Backstage components in Make purple. The AI starts from `_context/bui-starter.html` and uses only components from `_context/bui.md`. Don't invent, re-use.
+
 **Design the seats, not the engine.** Directions are described as what the maker sees and does — not services, caches, or pipelines. Everything behind the screen is faked: hardcoded data, no real APIs.
 
 ---
@@ -43,7 +45,7 @@ Rough, clear, interactive enough to try the one moment. Leave ~5 min to make sur
 1. Open your AI tool
 2. Copy the prompt from `prompt-template.md`
 3. Paste your hypothesis + define lines; name your tool
-4. Include `platform-context.md`, `ux-principles.md`, `platform-surfaces.md` — see `prompt-template.md`
+4. Include `platform-context.md`, `ux-principles.md`, `platform-surfaces.md`, `bui.md`, `bui-starter.html` + your screenshot — see `prompt-template.md`
 5. Start the conversation
 
 ---

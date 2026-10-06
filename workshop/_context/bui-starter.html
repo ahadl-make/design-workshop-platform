@@ -1,0 +1,153 @@
+<!doctype html>
+<!--
+  BUI STARTER: skeleton of a Make Backstage page, built with Backstage UI (BUI) 0.18.0.
+
+  RULES FOR THE AI
+  - Do NOT change the import map, CSS link or React/htm setup. They are pinned and tested
+    (the "&bundle=all" on the @backstage/ui URL is required: without it Tabs, Select, Table and Tag crash).
+  - Build ONLY inside the content area (look for "BUILD HERE"). Keep the sidebar and page header shell.
+  - Use only components listed in bui.md. Colours only via --bui-* tokens (no hex in components).
+  - Hardcode all data. No fetch, no backend.
+  - Change the page title (PAGE_TITLE) and the active sidebar item (ACTIVE_NAV) for your page.
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BUI starter - Make Backstage page</title>
+  <!-- Backstage UI (BUI) styles -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@backstage/ui@0.18.0/dist/css/styles.css" />
+  <!-- Make accent overrides. This is the ONLY place hex colours belong. -->
+  <style>
+    :root {
+      /* Make primary purple */
+      --bui-bg-solid: #6d00cc;
+      --bui-bg-solid-hover: #5a00a8;
+      --bui-bg-solid-pressed: #440080;
+      --bui-accent-bg: #6d00cc;
+      --bui-accent-bg-hover: #5a00a8;
+      --bui-ring: #6d00cc;
+      /* Page header title colour */
+      --make-title: #172B4D;
+      /* Link colour (applied to BUI Link below) */
+      --make-link: #6d00cc;
+      /* Sidebar gradient */
+      --make-sidebar-bg: linear-gradient(180deg, #b55dcd 0, #724ebf 100%);
+    }
+
+    /* ---------- Shell (plain HTML: BUI has no sidebar component) ---------- */
+    html, body { margin: 0; height: 100%; }
+    body { font-family: var(--bui-font-regular); background: var(--bui-bg-app); color: var(--bui-fg-primary); }
+    .shell { display: flex; height: 100vh; }
+
+    .sidebar {
+      width: 220px; flex-shrink: 0; display: flex; flex-direction: column;
+      background: var(--make-sidebar-bg); color: var(--bui-white);
+    }
+    .sidebar a {
+      display: flex; align-items: center; gap: var(--bui-space-3);
+      padding: var(--bui-space-3) var(--bui-space-4);
+      color: var(--bui-white); text-decoration: none;
+      font-size: var(--bui-font-size-3); font-weight: 600;
+    }
+    .sidebar a:hover { background: rgb(255 255 255 / 0.12); }
+    .sidebar a[aria-current="page"] { background: rgb(255 255 255 / 0.2); box-shadow: inset 3px 0 0 var(--bui-white); }
+    .sidebar svg { width: 18px; height: 18px; flex-shrink: 0; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+    .sidebar .brand { padding: var(--bui-space-5) var(--bui-space-4); font-size: var(--bui-font-size-6); font-weight: 700; }
+    .sidebar .kbd { margin-left: auto; font-size: var(--bui-font-size-1); border: 1px solid rgb(255 255 255 / 0.6); border-radius: var(--bui-radius-2); padding: 0 var(--bui-space-1); }
+    .sidebar .group { border-top: 1px solid rgb(0 0 0 / 0.2); padding: var(--bui-space-2) 0; }
+    .sidebar .spacer { flex: 1; }
+
+    .bui-Link { color: var(--make-link); }
+
+    .main { flex: 1; min-width: 0; display: flex; flex-direction: column; }
+    .page-header {
+      background: var(--bui-bg-neutral-1); border-bottom: 1px solid var(--bui-border-1);
+      padding: var(--bui-space-5) var(--bui-space-6);
+    }
+    .page-header h1 { margin: 0; font-size: var(--bui-font-size-7); font-weight: 700; color: var(--make-title); }
+    .content { flex: 1; overflow: auto; padding: var(--bui-space-6); }
+  </style>
+  <script type="importmap">
+  {
+    "imports": {
+      "react": "https://esm.sh/react@18.3.1",
+      "react/": "https://esm.sh/react@18.3.1/",
+      "react-dom/client": "https://esm.sh/react-dom@18.3.1/client?deps=react@18.3.1",
+      "@backstage/ui": "https://esm.sh/@backstage/ui@0.18.0?deps=react@18.3.1,react-dom@18.3.1&bundle=all",
+      "htm": "https://esm.sh/htm@3.1.1"
+    }
+  }
+  </script>
+</head>
+<body>
+  <div id="root"></div>
+  <script type="module">
+    import React, { useState } from 'react';
+    import { createRoot } from 'react-dom/client';
+    import htm from 'htm';
+    // Import any BUI components you use from bui.md here.
+    import { Box, Flex, Grid, Card, CardHeader, CardBody, CardFooter, Text, Button } from '@backstage/ui';
+
+    const html = htm.bind(React.createElement);
+
+    const PAGE_TITLE = 'Page title';
+    const ACTIVE_NAV = 'Home'; // one of the NAV labels below
+
+    // Tiny inline icons (BUI ships no icon set). Replace freely.
+    const icon = (d) => html`<svg viewBox="0 0 24 24" aria-hidden="true"><path d=${d} /></svg>`;
+    const NAV = [
+      { label: 'Home', d: 'M3 11l9-8 9 8M5 10v10h14V10' },
+      { label: 'Catalog', d: 'M12 3l8 4v10l-8 4-8-4V7z' },
+      { label: 'Docs', d: 'M6 3h9l4 4v14H6zM9 12h7M9 16h7' },
+      { label: 'Deployments', d: 'M5 19c0-6 4-12 14-14 0 10-6 14-12 14zM9 15l-4 4' },
+      { label: 'Devboxes', d: 'M4 4h16v16H4zM4 9h16M9 9v11' },
+      { label: 'Vibe Coded Apps', d: 'M7 18a4 4 0 010-8 5 5 0 019.5-1A4.5 4.5 0 0117 18z' },
+      { label: 'Kargo', d: 'M3 15h18l-3 5H6zM7 15v-4h10v4M10 11V7h4v4' },
+      { label: 'Blueprints', d: 'M12 5v14M5 12h14' },
+    ];
+
+    function Sidebar() {
+      return html`
+        <nav className="sidebar" aria-label="Main">
+          <div className="brand">Backstage</div>
+          <div className="group">
+            <a href="#">${icon('M11 4a7 7 0 100 14 7 7 0 000-14zM21 21l-5-5')}Search<span className="kbd">⌘ K</span></a>
+          </div>
+          <div className="group">
+            ${NAV.slice(0, 1).map((n) => html`<a href="#" aria-current=${n.label === ACTIVE_NAV ? 'page' : undefined}>${icon(n.d)}${n.label}</a>`)}
+          </div>
+          <div className="group">
+            ${NAV.slice(1).map((n) => html`<a href="#" aria-current=${n.label === ACTIVE_NAV ? 'page' : undefined}>${icon(n.d)}${n.label}</a>`)}
+          </div>
+          <div className="spacer" />
+          <div className="group"><a href="#">${icon('M5 12h.01M12 12h.01M19 12h.01')}More</a></div>
+          <div className="group"><a href="#">${icon('M12 9a3 3 0 100 6 3 3 0 000-6zM19 12l2-1-2-4-2 1-2-1V5h-4v2l-2 1-2-1-2 4 2 1v2l-2 1 2 4 2-1 2 1v2h4v-2l2-1 2 1 2-4-2-1z')}Settings</a></div>
+        </nav>
+      `;
+    }
+
+    function App() {
+      return html`
+        <div className="shell">
+          <${Sidebar} />
+          <div className="main">
+            <header className="page-header"><h1>${PAGE_TITLE}</h1></header>
+            <main className="content">
+              ${/* BUILD HERE: use components from bui.md. Replace the placeholder Card below. */ null}
+              <${Flex} direction="column" gap="4">
+                <${Card}>
+                  <${CardHeader}><${Text} variant="title-small">Placeholder card<//><//>
+                  <${CardBody}><${Text} color="secondary">Replace this card with your prototype.<//><//>
+                <//>
+              <//>
+            </main>
+          </div>
+        </div>
+      `;
+    }
+
+    createRoot(document.getElementById('root')).render(html`<${App} />`);
+  </script>
+</body>
+</html>

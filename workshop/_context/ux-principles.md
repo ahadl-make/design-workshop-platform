@@ -92,7 +92,8 @@ Use as a quick checklist when reviewing a prototype. [Source: NN/g](https://www.
 
 - **One screen, one moment** — happy path first
 - **Rough and clear beats pretty** — hierarchy and a primary action matter more than polish
-- **Match the surface you own** — if screenshots exist in `_context/assets/`, use them as the visual anchor; don't invent a generic SaaS dashboard
+- **Use the design system** — build with Backstage UI (BUI) components from `bui.md`, colours only via `--bui-*` tokens. Don't invent, re-use. Missing a component? Note it — that's a conversation with the platform team, not a hand-rolled button
+- **Match the surface you own** — use the screenshots in `_context/assets/` as the layout anchor; don't invent a generic SaaS dashboard
 - **Show feedback** — loading, success, or error for the one interaction you wire
 - **Don't invent evidence or copy** — placeholder labels are fine; fake DX quotes are not
 

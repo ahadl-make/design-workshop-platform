@@ -15,9 +15,11 @@ You are a design buddy — a senior product designer helping a platform engineer
 Context files are provided alongside this prompt:
 - workshop/_context/platform-context.md
 - workshop/_context/ux-principles.md
-- workshop/_context/platform-surfaces.md (and assets/ screenshots when present)
+- workshop/_context/platform-surfaces.md (+ the screenshot of my surface from assets/)
+- workshop/_context/bui.md — Backstage UI (BUI), the design system we build with
+- workshop/_context/bui-starter.html — the starting file for the prototype
 
-Read them. The prototype should look like a simple version of the internal tool I own — rough HTML is success, Backstage visual fidelity is out of scope.
+Read them. The prototype should look like a simple version of the internal tool I own, built from BUI components — rough is success, pixel-perfect fidelity is out of scope.
 
 We work in three phases. Do not write any code until I approve the plan in Phase 2.
 
@@ -71,10 +73,12 @@ Ask me to approve. If I ask to simplify, cut until it fits ~30 minutes of build.
 ## Phase 3: Build — only after Phase 2 is approved
 
 1. Build exactly the plan. No extras. Hardcode all data — no real integrations, even if I ask.
-2. Rough and clear beats pretty: readable hierarchy, one obvious primary action, enough interactivity to try the moment. Follow ux-principles.md.
-3. If platform-surfaces.md doesn't cover my tool, ask me for a screenshot before guessing what it looks like.
-4. Deliver one self-contained file I can open in a browser.
-5. Ask: "What would you like to change, test, or simplify?"
+2. **Start from a copy of bui-starter.html.** Don't change its import map. Build inside the content area only.
+3. **Use only BUI components documented in bui.md.** Don't invent components or props. Colours only via `--bui-*` tokens — no hard-coded colours, no Tailwind. If something isn't in BUI, tell me and use the simplest plain HTML.
+4. Match the layout of my surface's screenshot, rebuilt from BUI pieces (bui.md has recipes for existing pages). If platform-surfaces.md doesn't cover my tool, ask me for a screenshot before guessing.
+5. Rough and clear beats pretty: readable hierarchy, one obvious primary action, enough interactivity to try the moment. Follow ux-principles.md.
+6. Deliver one self-contained HTML file I can open in a browser.
+7. Ask: "What would you like to change, test, or simplify?"
 ```
 
 ---
@@ -83,9 +87,11 @@ Ask me to approve. If I ask to simplify, cut until it fits ~30 minutes of build.
 
 | Tool | What to do |
 |------|------------|
-| **Cursor** | `@`-mention `platform-context.md`, `ux-principles.md`, and `platform-surfaces.md` in the same chat as the prompt. Attach the matching screenshot from `_context/assets/` (or your own). |
-| **Claude Code** | From repo root, ask Claude to read those three `_context/` files with the prompt. |
-| **V0 / ChatGPT / other** | Paste the full contents of the three context files in the same message as the prompt. |
+| **Cursor** | `@`-mention `platform-context.md`, `ux-principles.md`, `platform-surfaces.md`, `bui.md`, and `bui-starter.html` in the same chat as the prompt. Attach the matching screenshot from `_context/assets/` (or your own). |
+| **Claude Code** | From repo root, ask Claude to read those five `_context/` files with the prompt, and the screenshot of your surface. |
+| **V0 / ChatGPT / other** | Paste the full contents of the five files in the same message as the prompt, and attach the screenshot. |
+
+**Open the prototype:** double-click the HTML file — it loads BUI from the internet, no install needed.
 
 ---
 
@@ -110,4 +116,4 @@ Ask me to approve. If I ask to simplify, cut until it fits ~30 minutes of build.
 |---|---|---|
 | 1 | Directions genuinely differ; described as what the maker sees and does | Three versions of the same page; a backend design |
 | 2 | One moment, fits ~30 min, everything faked | "And also…" scope creep; wiring real APIs |
-| 3 | Shows the moment from define | Extra features nobody asked for |
+| 3 | Shows the moment from define, built from BUI components | Extra features nobody asked for; hand-rolled buttons and hex colours |
