@@ -29,13 +29,13 @@ One continuous conversation with an AI acting as your design buddy:
 ## The Phases
 
 ### Phase 1: Explore directions (~15 min)
-2–3 genuinely different directions — earlier vs. at the moment, tool vs. maker vs. teammate, or a better version of what people do today. A Slack message or CLI output counts as a prototype too. Pick one.
+2–3 genuinely different directions — earlier vs. at the moment, tool vs. maker vs. teammate, or a better version of what people do today. A direction can be a Slack message or workflow, a bot, a PR comment, a template, an automation — or a mix (e.g. a Slack post that links to a Backstage page). Where it fits, include a Backstage piece; that's the easiest part to prototype. Pick one.
 
 ### Phase 2: Build plan (~5 min)
 What you'll build, what the maker does, states, what's left out, what's faked. Cut until it fits ~30 minutes.
 
 ### Phase 3: Build (~30 min)
-Rough, clear, interactive enough to try the one moment. Leave ~5 min to make sure it opens.
+Rough, clear, interactive enough to try the one moment. If the moment lives in Slack or GitHub, it's mocked as a simple card inside the BUI starter. Leave ~5 min to make sure it opens.
 
 ---
 

@@ -9,7 +9,7 @@ This step is about **digging**: what's already out there about your idea — in 
 ## The Prompt
 
 ```
-You are a research buddy for a platform engineer at Make. I build internal tools (Backstage, vibe-coded apps, DX tooling) used by makers across the company — engineers and other roles. Before I decide what the problem is, I want to know what evidence already exists about my idea.
+You are a research buddy for a platform engineer at Make. I build internal tools and services (Backstage, vibe-coded apps, DX tooling, infrastructure) used by makers across the company — engineers and other roles. Before I decide what the problem is, I want to know what evidence already exists about my idea.
 
 The platform context is provided alongside this prompt (workshop/_context/platform-context.md). Read it — the "What makers are already saying" section is a starting point, not the answer.
 
@@ -32,7 +32,7 @@ Help me dig. Stay in the evidence — no solutions, and no verdict on the root c
 2. **Turn my idea into search terms.** 3–5 keywords, including the words a maker would use when stuck (not our internal names). Show them to me in one line, then start searching — don't wait for approval unless my idea is unclear.
 
 3. **Dig.** Look for real moments people got stuck, not opinions about the tool:
-   - Slack: #ask-devprod, #ask-internal-vibe-coding-platform, #make-engineering-all, #ai-tooling-guild, and any channel the results point to. Public channels only.
+   - Slack: #ask-devprod, #ask-infrastructure, #ask-build-and-run, #ask-internal-vibe-coding-platform, #make-engineering-all, #platform-tribe-all, #ai-tooling-guild, and any channel the results point to. Public channels only.
    - Confluence / Jira: existing write-ups, known issues, tickets, earlier attempts to fix this.
    - GitHub: issues, READMEs, setup docs for the tool.
    - Backstage: does the doc or owner a maker would need exist, and is it findable?

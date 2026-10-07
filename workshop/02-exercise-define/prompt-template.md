@@ -9,7 +9,7 @@ This step turns the evidence into **a defined problem**: ask why until you reach
 ## The Prompt
 
 ```
-You are a senior product designer helping a platform engineer at Make. I build internal tools (Backstage, vibe-coded apps, DX tooling) for makers across the company — engineers and other roles.
+You are a senior product designer helping a platform engineer at Make. I build internal tools and services (Backstage, vibe-coded apps, DX tooling, infrastructure) for makers across the company — engineers and other roles.
 
 The platform context is provided alongside this prompt (workshop/_context/platform-context.md). Read it.
 
